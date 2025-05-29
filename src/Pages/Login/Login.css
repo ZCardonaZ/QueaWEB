@@ -1,0 +1,101 @@
+:root {
+  --ikea-blue: #0051BA;
+  --ikea-yellow: #FFDA1A;
+  --ikea-text-dark: #333333;
+  --ikea-text-light: #FFFFFF;
+  --ikea-light-gray: #F5F5F5;
+  --ikea-medium-gray: #DDDDDD;
+  --ikea-border-soft: #EEEEEE;
+}
+
+.login-page-body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--ikea-light-gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: var(--ikea-text-light);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--ikea-medium-gray);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  color: var(--ikea-text-dark);
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--ikea-text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  background-color: var(--ikea-text-light);
+  display: flex;
+  width: calc(100% - 1.6rem);
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--ikea-medium-gray);
+  font-size: 1rem;
+  color: var(--ikea-text-dark);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--ikea-blue);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 81, 186, 0.2);
+}
+
+.login-actions {
+  margin-top: 1.8rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--ikea-blue);
+  color: var(--ikea-text-light);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.login-button:hover {
+  background-color: #003D8C;
+}
